@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: auto;
+    height: 300px;
+
+}
+input{
+    width: 200px;
+    font-size: 20px;
+    padding: 5px;
+    
+}
+
+.resultat{
+    background-color: bisque;
+    border-radius: 8px ;
+    min-width: auto;
+    color: black;
+    
+}
+
