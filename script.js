@@ -9,8 +9,10 @@ function maFonction() {
     }
 
     const userInput = parseInt(document.getElementById("userInput").value); // Récupère l'entrée de l'utilisateur
+    console.log("Valeur de l'utitisateur", userInput);
     const message = document.getElementById("message"); // Récupère l'élément de message
     const essaisDiv = document.getElementById("essaisRestants");
+    
 
     // Incrémente le compteur d'essais
     essais++;
