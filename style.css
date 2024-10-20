@@ -4,7 +4,6 @@
 }
 
 body {
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -37,14 +36,17 @@ h1 {
 input {
   width: 200px;
   font-size: 20px;
-  padding: 5px;
-
+  padding: 10px ;
+  border-radius: 10px;
+  outline: 2px solid #f1ea12;
 }
+
+
 
 .play-button {
   display: inline-block;
   padding: 15px 30px;
-  background-image: linear-gradient(144deg, #ff5c5c, #ff009d61);
+  background-image: linear-gradient(144deg, #ffb35c, #ff009d61);
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   color: #ffffff;
@@ -54,11 +56,12 @@ input {
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
+ 
 }
 
 .play-button:hover {
   transform: scale(1.05);
-  background-image: linear-gradient(144deg, #ea03a9, #ff5c5c);
+  background-image: linear-gradient(144deg, #ea03a9, #ffb35c);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -66,12 +69,16 @@ input {
   transform: scale(0.95);
 }
 
+.text-white{
+  text-shadow: 2px 2px 2px black;
+}
+
 .btn {
   padding: 0.5em 2em 0.5em 2.5em;
   font-size: 1em;
   font-weight: bold;
   border-radius: 15px;
-  color: #17020e;
+  color: #fefefe;
   letter-spacing: 0.3em;
   text-shadow: -2px 2px 5px #fd3084;
   background-color: transparent;
@@ -83,15 +90,16 @@ input {
     inset 0 0 10px 2px #fd3084;
   transition: 100ms;
   cursor: pointer;
+  margin: 10px;
 }
 
 .btn:hover {
   box-shadow:
-    0 0 0px 1px #f11271,
-    0 0 10px 2px #fd3084,
-    inset 0 0 0px 1px #f11271,
-    inset 0 0 30px 2px #fd3084;
-  text-shadow: 0 0 10px #fd3084;
+    0 0 0px 1px #f1c112,
+    0 0 10px 2px #f5e538,
+    inset 0 0 0px 1px #f1ea12,
+    inset 0 0 30px 2px #fdd430;
+  text-shadow: 0 0 10px #fdde30;
   transform: translateY(-5px);
 }
 
@@ -166,3 +174,9 @@ input {
 .flash {
     animation: flash 0.8s; /* Durée de l'animation */
 }
+
+#difficultySelection{
+  text-align: center;
+  padding: 20px;
+}
+
