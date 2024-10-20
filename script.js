@@ -9,34 +9,43 @@ function maFonction() {
     }
 
     const userInput = parseInt(document.getElementById("userInput").value); // Récupère l'entrée de l'utilisateur
-    console.log("Valeur de l'utitisateur", userInput);
+    console.log("Valeur de l'utilisateur", userInput);
     const message = document.getElementById("message"); // Récupère l'élément de message
     const essaisDiv = document.getElementById("essaisRestants");
-    
 
     // Incrémente le compteur d'essais
     essais++;
     const essaisRestants = maxEssais - essais;
 
+    // Réinitialise les classes d'animation
+    message.classList.remove("win-message", "game-over-message");
+
     // Vérifie si l'utilisateur a deviné le numéro
     if (userInput === numero_mystere) {
         message.textContent = "Bravo ! Vous avez deviné le numéro. 🏆";
-    } else if (essais < 3) {
+        message.classList.add("win-message","blink"); // Ajoute la classe d'animation pour la victoire
+        
+    } else if (essais < maxEssais) {
         let indices; // Déclaration de la variable pour l'indice
 
         // Donne un indice en fonction de la valeur saisie
         if (userInput < numero_mystere) {
-            indices = " Le numéro mystère est plus grand." ;
+            indices = " Le numéro mystère est plus grand.";
         } else {
             indices = " Le numéro mystère est plus petit.";
         }
-            essaisDiv.textContent = "Essais restants : " + essaisRestants; // Mise à jour des essais restants
+        essaisDiv.textContent = "Essais restants : " + essaisRestants; // Mise à jour des essais restants
         // Affiche le message avec l'indice
         message.textContent = "Dommage, essayez encore." + indices;
     } else {
         // Si l'utilisateur a épuisé tous ses essais
         message.textContent = "Game over 👾! Le numéro mystère était " + numero_mystere + " 😔";
+        message.classList.add("game-over-message","flash"); // Ajoute la classe d'animation pour le game over
+        
+    
     }
 }
+
+
 
 

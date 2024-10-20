@@ -1,108 +1,168 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
+
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url(img/retro-arcade.avif);
-    background-size: cover;
-    
-    
-}
-
-h1{
-    text-align: center;
-    color: #efebeb;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(img/retro-arcade.avif);
+  background-size: cover;
 
 
 }
 
-.container{
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, rgba(206, 10, 245, 0), rgba(206, 10, 245, 1), rgb(206, 239, 39));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: auto;
-    height: 300px;
+h1 {
+  text-align: center;
+  color: #efebeb;
+}
 
+.container {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, rgba(206, 10, 245, 0), rgba(206, 10, 245, 1), rgb(206, 239, 39));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: auto;
+  height: 300px;
 
 }
-input{
-    width: 200px;
-    font-size: 20px;
-    padding: 5px;
-    
+
+input {
+  width: 200px;
+  font-size: 20px;
+  padding: 5px;
+
 }
+
 .play-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-image: linear-gradient(144deg, #ff5c5c, #ff009d61);
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  display: inline-block;
+  padding: 15px 30px;
+  background-image: linear-gradient(144deg, #ff5c5c, #ff009d61);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .play-button:hover {
-    transform: scale(1.05);
-    background-image: linear-gradient(144deg, #ea03a9, #ff5c5c);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+  background-image: linear-gradient(144deg, #ea03a9, #ff5c5c);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .play-button:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .btn {
-    padding: 0.5em 2em 0.5em 2.5em;
-    font-size: 1em;
-    font-weight: bold;
-    border-radius: 15px;
-    color: #17020e;
-    letter-spacing: 0.3em;
-    text-shadow: -2px 2px 5px #fd3084;
-    background-color: transparent;
-    border: 2px solid #feb1de;
-    box-shadow:
-      0 0 0px 1px #f11271,
-      0 0 10px 2px #fd3084,
-      inset 0 0 0px 1px #f11271,
-      inset 0 0 10px 2px #fd3084;
-    transition: 100ms;
-    cursor: pointer;
+  padding: 0.5em 2em 0.5em 2.5em;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 15px;
+  color: #17020e;
+  letter-spacing: 0.3em;
+  text-shadow: -2px 2px 5px #fd3084;
+  background-color: transparent;
+  border: 2px solid #feb1de;
+  box-shadow:
+    0 0 0px 1px #f11271,
+    0 0 10px 2px #fd3084,
+    inset 0 0 0px 1px #f11271,
+    inset 0 0 10px 2px #fd3084;
+  transition: 100ms;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow:
+    0 0 0px 1px #f11271,
+    0 0 10px 2px #fd3084,
+    inset 0 0 0px 1px #f11271,
+    inset 0 0 30px 2px #fd3084;
+  text-shadow: 0 0 10px #fd3084;
+  transform: translateY(-5px);
+}
+
+.btn:active {
+  box-shadow:
+    0 0 0px 1px #f11271,
+    0 0 25px 2px #fd3084,
+    inset 0 0 0px 1px #f11271,
+    inset 0 0 30px 2px #fd3084;
+  transform: translateY(1px);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
   }
-  
-  .btn:hover {
-    box-shadow:
-      0 0 0px 1px #f11271,
-      0 0 10px 2px #fd3084,
-      inset 0 0 0px 1px #f11271,
-      inset 0 0 30px 2px #fd3084;
-    text-shadow: 0 0 10px #fd3084;
-    transform: translateY(-5px);
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
-  
-  .btn:active {
-    box-shadow:
-      0 0 0px 1px #f11271,
-      0 0 25px 2px #fd3084,
-      inset 0 0 0px 1px #f11271,
-      inset 0 0 30px 2px #fd3084;
-    transform: translateY(1px);
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
   }
-  
- 
+  25% {
+    transform: translate(-5px, 0);
+  }
+  50% {
+    transform: translate(5px, 0);
+  }
+  75% {
+    transform: translate(-5px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.win-message {
+  color: green;
+  animation: fadeIn 0.5s forwards;
+  font-family: 'Press Start 2P', cursive; 
+  text-shadow: 1px 1px 0px black; /* Contour noir autour du texte */
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+.game-over-message {
+  color: red;
+  animation: shake 0.5s forwards;
+  font-family: 'Press Start 2P', cursive; 
+  text-shadow: 1px 1px 0px black;
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    25% { opacity: 0; }
+    50% { opacity: 1; }
+    75% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.flash {
+    animation: flash 0.8s; /* Durée de l'animation */
+}
