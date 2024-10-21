@@ -5,20 +5,7 @@ let maxNumber = 10;
 
 
 function maFonction() {
-    const difficulty = document.getElementById("difficulty").value; // Récupérer la difficulté
-
-    // Définir la difficulté
-    if (difficulty === "easy") {
-        maxEssais = 3;
-        maxNumber = 10;
-    } else if (difficulty === "medium") {
-        maxEssais = 2;
-        maxNumber = 50;
-    } else if (difficulty === "hard") {
-        maxEssais = 1;
-        maxNumber = 100;
-    }
-
+    
     if (essais === 0) {
         numero_mystere = Math.floor(Math.random() * 10) + 1; // Génère un nombre entre 1 et 10
         console.log("Nombre mystère généré :", numero_mystere); // Affiche le nombre mystère dans la console
@@ -41,7 +28,6 @@ function maFonction() {
         message.textContent = "Bravo ! Vous avez deviné le numéro. 🏆";
         message.classList.add("win-message","blink"); // Ajoute la classe d'animation pour la victoire
         
-        essais = 0; 
 
     } else if (essais < maxEssais) {
         let indices; // Déclaration de la variable pour l'indice
@@ -60,7 +46,7 @@ function maFonction() {
         message.textContent = "Game over 👾! Le numéro mystère était " + numero_mystere + " 😔";
         message.classList.add("game-over-message","flash"); // Ajoute la classe d'animation pour le game over
         
-        essais = 0; 
+        
     }
 }
 
