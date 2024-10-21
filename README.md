@@ -87,7 +87,7 @@ Livraison du projet dans 2 jours à compter du début du brief.
 |                                         | <ul><li>- [X] ⭐</li><ul>     |                         |
 | ***Bonus***                             |                               |                         |
 | - Délai d'affichage                     | <ul><li>- [x] &nbsp;</li><ul> |                         |
-| - 3 niveaux de difficulté               | <ul><li>- [] &nbsp;</li><ul> |                         |
+| - 3 niveaux de difficulté               | <ul><li>- [ ] &nbsp;</li><ul> |                         |
 |                                         | <ul><li>- [ ] ⭐</li><ul>     |                         |
 | ***Livrables***                         |                               |                         |
 | - Projet livré dans les délais          | <ul><li>- [x] &nbsp;</li><ul> |                         |
