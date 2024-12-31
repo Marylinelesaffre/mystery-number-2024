@@ -46,7 +46,6 @@ function maFonction() {
         message.textContent = "Game over 👾! Le numéro mystère était " + numero_mystere + " 😔";
         message.classList.add("game-over-message","flash"); // Ajoute la classe d'animation pour le game over
         
-        
     }
 }
 
